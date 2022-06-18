@@ -4,18 +4,8 @@ sidebar_position: 3
 
 # Common Issues
 
-Reselling any official vyast.dev product without authorization is NOT allowed.
-Intentionally promoting or advertising any official vyast.dev product in a negative or malicious way in any place other this discord is NOT allowed.
-Attempting to leak, crack, or decrypt any official vyast.dev product is NOT allowed.
-Abusing discord logs sent by any official vyast.dev script in a negative or malicious way is NOT allowed.
-Any intent or attempt to test or develop any forms of FiveM related cheats/hacks with an official vyast.dev product is NOT allowed.
-Refunds are NOT allowed or offered unless the buyer did not receive the product they purchased. All sales are final.
+### Couldn't Start Resource
 
-1.) Reselling any official vyast.dev product without authorization is NOT allowed.
-2.) Intentionally promoting or advertising any official vyast.dev product in a negative or malicious way in any place other this discord is NOT allowed.
-3.) Attempting to leak, crack, or decrypt any official vyast.dev product is NOT allowed.
-4.) Abusing discord logs sent by any official vyast.dev script in a negative or malicious way is NOT allowed.
-5.) Any intent or attempt to test or develop any forms of FiveM related cheats/hacks with an official vyast.dev product is NOT allowed.
-6.) Refunds are NOT allowed or offered. All sales are final.
-7.) Official script support is not offered to anybody who does not have the @[Customer] role.
-8.) Customers who leave the discord server for any reason are no longer eligible for support and are NOT entitled to receive their roles back. This includes any customers who may have had their account terminated or suspended (this obviously happened to your account for a reason, and these aren't the type of customers I want in this discord). Be responsible.
+- Make sure that the time on your VPS/Dedicated Server is set to automatic. An example for Windows 10 in the settings is shown below:
+
+![image info](./img/couldntstart.png)
