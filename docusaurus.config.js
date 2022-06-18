@@ -79,7 +79,8 @@ const config = {
         title: "vyast.dev",
         logo: {
           alt: "Logo",
-          src: "img/logo.svg",
+          src: "img/black64.png",
+          srcDark: "img/white64.png",
         },
         items: [
           {
@@ -112,16 +113,8 @@ const config = {
             title: "Community",
             items: [
               {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
-              },
-              {
                 label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
-              },
-              {
-                label: "Twitter",
-                href: "https://twitter.com/docusaurus",
+                href: "https://discord.gg/vyast",
               },
             ],
           },
@@ -129,17 +122,25 @@ const config = {
             title: "More",
             items: [
               {
-                label: "Blog",
-                to: "/blog",
+                label: "Tebex Store",
+                href: "https://store.vyast.dev",
+              },
+              {
+                label: "Venom Anti-Cheat",
+                href: "https://venomac.com",
               },
               {
                 label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
+                href: "https://github.com/Vyast",
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        logo: {
+          alt: "Footer Logo",
+          src: "img/footer.png",
+        },
+        copyright: `Copyright © ${new Date().getFullYear()} vyast.dev Inc. All Rights Reserved.`,
       },
       prism: {
         theme: lightCodeTheme,
