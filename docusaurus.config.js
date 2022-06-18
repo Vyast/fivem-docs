@@ -62,10 +62,23 @@ const config = {
       //   indexName: "YOUR_INDEX_NAME",
       //   contextualSearch: true,
       // },
+      announcementBar: {
+        id: "v2_info",
+        content:
+          "NOTE: Some written features for v-queue may not be released yet. Looking for the VenomAC documentation? Visit https://docs.venomac.com/",
+        backgroundColor: "#fafbfc",
+        textColor: "#091E42",
+        isCloseable: false,
+      },
+      colorMode: {
+        defaultMode: "dark",
+        disableSwitch: false,
+        respectPrefersColorScheme: true,
+      },
       navbar: {
         title: "vyast.dev",
         logo: {
-          alt: "My Site Logo",
+          alt: "Logo",
           src: "img/logo.svg",
         },
         items: [
