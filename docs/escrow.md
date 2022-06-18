@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# FiveM Escrow
+# Asset Escrow
 
 The **Asset Escrow system**, developed by [Cfx.re](https://cfx.re/) in partnership with [Tebex](https://www.tebex.io/) is the official encryption system that is used for all resources sold on our store.
 

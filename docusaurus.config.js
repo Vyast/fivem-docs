@@ -77,7 +77,7 @@ const config = {
         items: [
           {
             type: "doc",
-            docId: "intro",
+            docId: "faq",
             position: "left",
             label: "Documentation",
           },
@@ -99,8 +99,16 @@ const config = {
             title: "Docs",
             items: [
               {
-                label: "Tutorial",
-                to: "/docs/intro",
+                label: "FAQ",
+                to: "/docs/faq",
+              },
+              {
+                label: "Asset Escrow",
+                to: "/docs/escrow",
+              },
+              {
+                label: "Terms of Service",
+                to: "/docs/tos",
               },
             ],
           },
