@@ -13,7 +13,7 @@ function HomepageHeader() {
     <div className={clsx("hero", styles.heroBanner)}>
       <div className="container">
         <img
-          src={`img/${colorMode ? "white200" : "black200"}.png`}
+          src={`img/${colorMode === "dark" ? "white200" : "black200"}.png`}
           alt="Logo"
           width={200}
           height={200}
