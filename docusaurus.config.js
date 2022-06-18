@@ -36,15 +36,7 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          editUrl: "https://github.com/Vyast/fivem-docs/pulls",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -63,9 +55,9 @@ const config = {
       //   contextualSearch: true,
       // },
       announcementBar: {
-        id: "v2_info",
+        id: "extra_info",
         content:
-          "NOTE: Some written features for v-queue may not be released yet. Looking for the VenomAC documentation? Visit https://docs.venomac.com/",
+          "NOTE: Some written features for v-queue may not be released yet. Looking for the VenomAC documentation? <a target='_blank' rel='noopener noreferrer' href='https://docs.venomac.com'>Click Here</a>",
         backgroundColor: "#fafbfc",
         textColor: "#091E42",
         isCloseable: false,
@@ -87,13 +79,16 @@ const config = {
             type: "doc",
             docId: "intro",
             position: "left",
-            label: "Tutorial",
+            label: "Documentation",
           },
-          { to: "/blog", label: "Blog", position: "left" },
           {
-            href: "https://github.com/facebook/docusaurus",
-            label: "GitHub",
+            type: "localeDropdown",
             position: "right",
+          },
+          {
+            href: "https://github.com/Vyast/fivem-docs",
+            position: "right",
+            className: "header-github-link",
           },
         ],
       },
@@ -136,15 +131,12 @@ const config = {
             ],
           },
         ],
-        logo: {
-          alt: "Footer Logo",
-          src: "img/footer.png",
-        },
         copyright: `Copyright © ${new Date().getFullYear()} vyast.dev Inc. All Rights Reserved.`,
       },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        additionalLanguages: ["lua"],
       },
     }),
 };
