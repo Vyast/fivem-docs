@@ -9,9 +9,7 @@ import styles from "./index.module.css";
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   const { colorMode } = useColorMode();
-  const [src, setSrc] = useState(
-    colorMode === "dark" ? "white200" : "black200"
-  );
+  const [src, setSrc] = useState(undefined);
 
   useEffect(() => {
     setSrc(colorMode === "dark" ? "white200" : "black200");
@@ -20,7 +18,9 @@ function HomepageHeader() {
   return (
     <div className={clsx("hero", styles.heroBanner)}>
       <div className="container">
-        <img src={`img/${src}.png`} alt="Logo" width={200} height={200} />
+        {src && (
+          <img src={`img/${src}.png`} alt="Logo" width={200} height={200} />
+        )}
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
