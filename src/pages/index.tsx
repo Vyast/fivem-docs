@@ -9,21 +9,12 @@ import styles from "./index.module.css";
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   const { colorMode } = useColorMode();
-  console.log(
-    colorMode,
-    "colorMode",
-    `img/${colorMode === "light" ? "black200" : "white200"}.png`
-  );
+  const imageSrc = colorMode === "light" ? "black200" : "white200";
+  console.log(colorMode, "colorMode", imageSrc);
   return (
     <div className={clsx("hero", styles.heroBanner)}>
       <div className="container">
-        <img
-          src={`img/${colorMode === "light" ? "black200" : "white200"}.png`}
-          alt="Logo"
-          width={200}
-          height={200}
-          className={styles.ox}
-        />
+        <img src={`img/${imageSrc}.png`} alt="Logo" width={200} height={200} />
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
