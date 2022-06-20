@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
@@ -9,12 +9,16 @@ import styles from "./index.module.css";
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   const { colorMode } = useColorMode();
-  const imageSrc = colorMode === "light" ? "black200" : "white200";
-  console.log(colorMode, "colorMode", imageSrc);
+  const [src, setSrc] = useState(undefined);
+
+  useEffect(() => {
+    setSrc(colorMode === "dark" ? "white200" : "black200");
+  }, [colorMode]);
+
   return (
     <div className={clsx("hero", styles.heroBanner)}>
       <div className="container">
-        <img src={`img/${imageSrc}.png`} alt="Logo" width={200} height={200} />
+        <img src={`img/${src}.png`} alt="Logo" width={200} height={200} />
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
