@@ -9,7 +9,11 @@ import styles from "./index.module.css";
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   const { colorMode } = useColorMode();
-  console.log(colorMode, "colorMode");
+  console.log(
+    colorMode,
+    "colorMode",
+    `img/${colorMode === "light" ? "black200" : "white200"}.png`
+  );
   return (
     <div className={clsx("hero", styles.heroBanner)}>
       <div className="container">
