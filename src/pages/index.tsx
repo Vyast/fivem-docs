@@ -9,7 +9,9 @@ import styles from "./index.module.css";
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   const { colorMode } = useColorMode();
-  const [src, setSrc] = useState(undefined);
+  const [src, setSrc] = useState(
+    colorMode === "dark" ? "white200" : "black200"
+  );
 
   useEffect(() => {
     setSrc(colorMode === "dark" ? "white200" : "black200");
